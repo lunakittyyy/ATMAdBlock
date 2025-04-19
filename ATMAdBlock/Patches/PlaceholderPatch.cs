@@ -1,20 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using HarmonyLib;
+﻿using HarmonyLib;
 
 namespace ATMAdBlock.Patches
 {
-    /// <summary>
-    /// This is an example patch, made to demonstrate how to use Harmony. You should remove it if it is not used.
-    /// </summary>
-    [HarmonyPatch(typeof(GorillaLocomotion.Player))]
-    [HarmonyPatch("Awake", MethodType.Normal)]
-    internal class ExamplePatch
+    [HarmonyPatch(typeof(CustomMapLoader))]
+    [HarmonyPatch("ReplacePlaceholders", MethodType.Normal)]
+    internal class PlaceholderPatch
     {
-        private static void Postfix(GorillaLocomotion.Player __instance)
+        private static void Prefix()
         {
-            Console.WriteLine(__instance.maxJumpSpeed);
+            CustomMapLoader.instance.atmPrefab = null;
         }
     }
 }
