@@ -1,7 +1,7 @@
 # ATMAdBlock
 Hides all ATMs in all custom maps so you don't have to look at them anymore.
 
-### What about the poor creators????????? You're evil Luna! How dare you take profit away from them!!
+### What about the poor creators????????? You're evil Gizmo! How dare you take profit away from them!!
 The kinds of people installing this mod weren't going to be buying shiny rocks using their creator code anyway (let alone shiny rocks at all, for a lot of us, myself included!)
 
 I don't know the exact cut AA gives to creators, but I'm willing to bet its not a lot.
